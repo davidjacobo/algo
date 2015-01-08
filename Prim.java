@@ -16,7 +16,7 @@ import java.util.PriorityQueue;
 
 class Prim{
 	double INF = 2000000000L;
-	int[] intree;
+	boolean[] intree;
 	double[] distance;
 	
 	public static void main(String[] args){
@@ -35,7 +35,7 @@ class Prim{
 		E = l.nextInt();
 		
 		Nodo[] graph = new Nodo[V];
-		tree = new int[V];
+		tree = new boolean[V];
 		distance = new double[V];
 		
 		//We obtain all the edges from the user
